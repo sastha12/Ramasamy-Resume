@@ -6,10 +6,9 @@
 <title>Resume - Ramasamy Sastha Prabu A</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
 <style>
 
-/* ----------- GLOBAL FONT RULES ----------- */
+/* ----------- GLOBAL ----------- */
 body {
     margin: 0;
     padding: 0;
@@ -17,13 +16,12 @@ body {
     font-family: Calibri, Arial, sans-serif;
 }
 
-/* Headings (Georgia) */
 .left h1,
 .right h2 {
     font-family: Georgia, serif;
 }
 
-/* PRINT – A4 PERFECT ONE PAGE */
+/* ----------- PRINT ----------- */
 @media print {
     body {
         margin: 0 !important;
@@ -34,8 +32,6 @@ body {
         width: 210mm !important;
         height: 297mm !important;
         margin: 0 !important;
-        padding: 0 !important;
-        overflow: hidden !important;
         box-shadow: none !important;
         transform: scale(0.92);
         transform-origin: top left;
@@ -43,126 +39,103 @@ body {
     #downloadBtn { display: none !important; }
 }
 
-/* DOWNLOAD BUTTON */
+/* ----------- BUTTON ----------- */
 #downloadBtn {
     position: fixed;
     top: 20px;
     right: 20px;
     background: #003b2f;
-    color: white;
+    color: #fff;
     padding: 12px 20px;
     border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
     border: none;
-    z-index: 999;
-    transition: 0.3s ease;
-}
-#downloadBtn:hover {
-    background: #005c48;
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
-/* MAIN CONTAINER */
+/* ----------- CONTAINER ----------- */
 .container {
     width: 900px;
     margin: 40px auto;
-    background: white;
+    background: #fff;
     display: flex;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
-/* ----------- LEFT GREEN SIDEBAR ----------- */
+/* ----------- LEFT ----------- */
 .left {
     width: 32%;
     background: #003b2f;
-    color: white;
-    padding: 35px 28px; /* reduced padding */
+    color: #fff;
+    padding: 35px 28px;
 }
 
 .left h1 {
-    margin: 0;
     font-size: 28px;
+    margin: 0;
     line-height: 1.3;
-    font-weight: bold;
     letter-spacing: 1px;
 }
 
 .left .role {
     font-size: 12px;
-    margin-top: 8px;
-    margin-bottom: 15px;  /* reduced */
+    margin: 10px 0 18px;
     letter-spacing: 1px;
 }
 
-/* Section Titles */
-.section-title {
-    font-size: 12px;
-    margin-top: 20px;   /* reduced */
-    margin-bottom: 8px; /* reduced */
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #d9d9d9;
+/* Sidebar headings – SAME STYLE AS RIGHT */
+.left .side-heading {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0 8px;
+    color: #ffffff;
 }
 
-/* Sidebar text */
 .left p {
-    margin: 4px 0; /* uniform tight spacing */
     font-size: 13px;
+    margin: 4px 0;
 }
 
-/* Links */
-.left a { 
-    color: #d8eaff; 
-    text-decoration: none; 
+.left a {
+    color: #d8eaff;
+    text-decoration: none;
 }
 
-/* Sidebar Lists */
 .left ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 
 .left ul li {
-    margin-bottom: 4px; /* reduced */
-    color: #f0f0f0;
     font-size: 13px;
+    margin-bottom: 6px;
 }
 
-/* ----------- RIGHT SECTION ----------- */
+/* ----------- RIGHT ----------- */
 .right {
     width: 68%;
-    padding: 30px 35px 40px; /* reduced */
+    padding: 30px 35px 40px;
 }
 
 .right h2 {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;      /* reduced */
-    margin-bottom: 10px;   /* reduced */
+    margin: 18px 0 10px;
 }
 
 .right p,
 .right li {
     font-size: 14px;
     line-height: 1.5;
-    margin: 4px 0; /* tighter */
 }
 
-/* Professional Summary Top Fix */
-.right h2:first-of-type {
-    margin-top: 5px !important; /* ultra tight */
-}
-
-/* Education items */
 .edu-item {
-    margin-bottom: 10px; /* reduced */
+    margin-bottom: 10px;
 }
 
 .edu-title {
     font-weight: bold;
-    font-size: 14px;
 }
 
 .edu-date {
@@ -170,17 +143,11 @@ body {
     color: #444;
 }
 
-/* Courses list spacing */
-.right ul li {
-    margin-bottom: 3px; /* reduced */
-}
-
-/* Project Box */
 .project-box {
-    padding: 10px; /* reduced padding */
+    padding: 10px;
     border-left: 4px solid #003b2f;
     background: #f5f8f7;
-    margin-top: 12px; /* reduced */
+    margin-top: 12px;
     border-radius: 4px;
 }
 
@@ -193,105 +160,108 @@ body {
 
 <div class="container">
 
-    <!-- LEFT SIDEBAR -->
-    <div class="left">
-        <h1>RAMASAMY@<br>SASTHA<br>PRABU A</h1>
-        <div class="role">FULL STACK DEVELOPER | JAVA</div>
+<!-- LEFT -->
+<div class="left">
+    <h1>RAMASAMY<br>SASTHA PRABU A</h1>
+    <div class="role">SOFTWARE DEVELOPER | JAVA FULL STACK</div>
 
-        <div class="section-title"><h4>Personal Details</h4></div>
-        <p>No.9 Koviloor Road opp sivam theatre</p>
-        <p>Karaikudi 630001 India</p> <br>
-        <p><i class="fa-solid fa-phone"></i> &nbsp; +91 9360018202</p>
-<p><i class="fa-solid fa-envelope"></i> &nbsp; sasthasastha4@gmail.com </p><br>
+    <h2 class="side-heading">Personal Details</h2>
+    <p>No.9 Koviloor Road, Opp Sivam Theatre</p>
+    <p>Karaikudi – 630001, India</p>
+    <p><i class="fa-solid fa-phone"></i> &nbsp; +91 9360018202</p>
+    <p><i class="fa-solid fa-envelope"></i> &nbsp; sasthasastha4@gmail.com</p>
 
+    <h2 class="side-heading">Nationality</h2>
+    <p>Indian</p>
 
-        <p style="margin-top:8px;font-size:12px;letter-spacing:1px;color:#cfdcd8;">DATE OF BIRTH</p>
-        <p>12/11/2001</p> <br>
+    <h2 class="side-heading">Links</h2>
+    <p><a href="https://www.linkedin.com/in/ramasamysasthaprabu/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/sastha12" target="_blank">GitHub</a></p>
 
-        <p style="margin-top:6px;font-size:12px;letter-spacing:1px;color:#cfdcd8;">NATIONALITY</p>
-        <p>INDIAN</p>
+    <h2 class="side-heading">Technical Skills</h2>
+    <ul>
+        <li><strong><h3>Frontend:</h3></strong> HTML5, CSS3, JavaScript, Bootstrap, jQuery</li>
+        <li><strong><h3>Backend:</h3></strong> Java, Spring Boot, Spring MVC, REST APIs</li>
+        <li><strong><h3>Database:</h3></strong> MySQL, JDBC</li>
+        <li><strong><h3>ORM:</h3></strong> JPA, Hibernate</li>
+        <li><strong><h3>Tools:</h3></strong> Git, GitHub, Maven, Postman</li>
+        <li><strong><h3>Methodologies:</h3></strong> Agile, Scrum</li>
+    </ul>
 
-        <div class="section-title">Links</div>
-        <p><a href="https://www.linkedin.com/in/ramasamysasthaprabu/" target="_blank">Linkedin</a></p>
-        <p><a href="https://github.com/sastha12" target="_blank">Github</a></p>
-        
+    <h2 class="side-heading">Soft Skills</h2><br>
+    <ul>
+        <li>Problem Solving</li>
+        <li>Analytical Thinking</li>
+        <li>Clean Coding Practices</li>
+        <li>Team Collaboration</li>
+        <li>Time Management</li>
+    </ul>
+</div>
 
-        <div class="section-title"><strong><b>Skills</b></strong></div>
-        <ul>
-            <li><strong>Frontend :</strong> HTML5, CSS3, JS, Bootstrap, jQuery, Figma.</li>&nbsp;
-            <li><strong>Backend :</strong> Java, Spring Boot, REST API, Spring MVC.</li>&nbsp;
-            <li><strong>Database :</strong> MySQL, JDBC.</li>&nbsp;
-            <li><strong>ORM :</strong> JPA, Hibernate.</li>&nbsp;
-            <li><strong>Tools :</strong> Git, GitHub, Maven, Postman.</li>&nbsp;
-            <li><strong>Methodologies :</strong> Agile, Scrum.</li>&nbsp;
-            <li><strong>Others :</strong> WordPress, MS Office.</li>&nbsp;
-        </ul>
+<!-- RIGHT -->
+<div class="right">
 
-        <div class="section-title"><strong><b>Soft Skills</b></strong></div>
-        <ul>
-            <li>Fast Learner</li>
-            <li>Multitasking</li>
-            <li>Communication</li>
-            <li>Analytical Thinking</li>
-            <li>Team Leadership</li>
-            <li>Problem Solving</li>
-            <li>Time Management</li>
-        </ul>
-    </div>
+<h2>Professional Summary</h2>
+<p>
+Results-driven Java Full Stack Developer with strong fundamentals in designing and developing scalable,
+high-performance, and low-latency applications. Experienced across all phases of the software
+development lifecycle. Skilled in writing clean, testable, and efficient code using Java, Spring Boot,
+REST APIs, JavaScript, and MySQL. Passionate about continuous improvement and product-driven development.
+</p>
 
-    <!-- RIGHT CONTENT -->
-    <div class="right">
+<h2>Education</h2>
+<div class="edu-item">
+    <div class="edu-title">B.Sc Computer Science – Alagappa Govt. Arts College</div>
+    <div class="edu-date">2020 – 2023 | CGPA: 6.8</div>
+</div>
 
-        <h2>Professional Summary</h2>
-        <p>
-           I am an enthusiastic Java Full Stack Developer ready to create scalable, effective, and user-friendly applications. I am well-versed in Java, HTML5, CSS3, and JavaScript, and I have practical experience with Servlets, JSP, JDBC, SQL, and Spring Boot from both personal and academic projects. I like using responsive design, well-structured code, and clean code to transform concepts into useful features. I'm committed to delivering dependable solutions that offer a seamless user experience, as well as to always learning new technologies. As a new employee, I'm excited to apply my abilities to practical projects and advance into a full-stack development position.
-        </p>
+<div class="edu-item">
+    <div class="edu-title">HSC – Koviloor Andavar Mat Hr Sec School</div>
+    <div class="edu-date">2018 – 2019 | 58%</div>
+</div>
 
-        <h2>Education</h2>
+<div class="edu-item">
+    <div class="edu-title">SSLC – Koviloor Andavar Mat Hr Sec School</div>
+    <div class="edu-date">2016 – 2017 | 75%</div>
+</div>
 
-        <div class="edu-item">
-            <div class="edu-title">B.SC Computer Science, Alagappa Govt. Arts College, Karaikudi</div>
-            <div class="edu-date">08/2020 - 09/2023 • 6.8 CGPA</div>
-        </div>
+<h2>Courses</h2>
+<ul>
+    <li>Java Full Stack Developer – Elysium Academy</li>
+    <li>Advanced Figma – Novitech Pvt Ltd</li>
+    <li>Real-World API Skills – Novitech Pvt Ltd</li>
+    <li>Master GitHub – Novitech Pvt Ltd</li>
+</ul>
 
-        <div class="edu-item">
-            <div class="edu-title">HSC, Koviloor Andavar Mat.Hr.School, Karaikudi</div>
-            <div class="edu-date">06/2018 - 03/2019 • 58%</div>
-        </div>
+<h2>Projects</h2>
 
-        <div class="edu-item">
-            <div class="edu-title">SSLC, Koviloor Andavar Mat.Hr.School, Karaikudi</div>
-            <div class="edu-date">06/2016 - 03/2017 • 75%</div>
-        </div>
+<div class="project-box">
+<strong>Taxi Booking System | Spring Boot, REST API, MySQL</strong>
+<p>
+Developed a scalable taxi booking platform with RESTful APIs for authentication,
+ride booking, driver allocation, and fare calculation. Optimized backend
+performance and integrated third-party APIs for location services.
+</p>
+</div>
 
-        <h2>Courses</h2>
-        <ul>
-            <li>Advanced Figma – Novitech Pvt Ltd</li>
-            <li>Java Full Stack Developer – Elysium Academy</li>
-            <li>Real-World API Skills – Novitech Pvt Ltd</li>
-            <li>Master GitHub – Novitech Pvt Ltd</li>
-            <li>Front End Web Development – EMC</li>
-            <li>Bootstrap 5 – JVL Code</li>
-        </ul>
+<div class="project-box">
+<strong>Bug Tracking System | Spring Boot MVC, JSP, MySQL</strong>
+<p>
+Built a complete bug tracking system supporting SDLC with features for bug
+creation, assignment, status tracking, and administrative control.
+</p>
+</div>
 
-        <h2>Projects</h2>
+<h2>Software Development Practices</h2>
+<ul>
+    <li>End-to-end SDLC involvement</li>
+    <li>Clean, testable, and efficient coding</li>
+    <li>REST API design & backend optimization</li>
+    <li>Version control & release management</li>
+    <li>Continuous learning mindset</li>
+</ul>
 
-        <div class="project-box">
-            <strong>Taxi Booking System (Spring Boot, JS, MySQL)</strong>
-            <p>
-                A web-based taxi booking platform featuring user authentication, ride booking, driver allocation, fare calculation, OTP verification, and ride history tracking. Includes a special Pink Ride feature that automatically assigns female drivers to female passengers. Integrated with the Nominatim API for location search and uses the Haversine formula for accurate distance calculation. Built using Spring Boot REST API, JavaScript frontend, and MySQL.
-            </p>
-        </div>
-
-        <div class="project-box">
-            <strong>Bug Tracking System (Spring Boot, JSP, MySQL)</strong>
-            <p>
-                A complete bug management tool featuring user authentication, bug creation, assignment, status tracking, and admin control. Built using Spring Boot MVC with JSP views and MySQL backend.
-            </p>
-        </div>
-
-    </div>
-
+</div>
 </div>
 
 </body>
